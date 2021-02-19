@@ -1,8 +1,14 @@
-<h2>All cocktails</h2>
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name, cocktails_show_path(cocktail) %> </li>
-  <% end %>
-</ul>
+<div class="banner" style="height: 850px;
+  background-image: url('https://static.onecms.io/wp-content/uploads/sites/20/2020/04/02/cocktails.jpg');">
+</div>
 
-<!--
+<div class="container my-5">
+  <div class="cards">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">
+        <%= cocktail.name %>
+        <% end %>
+      </div>
+  </div>
+</div>
+<%# <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()"> %>
